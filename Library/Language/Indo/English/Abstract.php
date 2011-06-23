@@ -4,7 +4,7 @@
  * @author newloki
  */
  
-abstract class Language_Indo_Englisch_Abstract extends Language_Indo_Abstract
+abstract class Language_Indo_English_Abstract extends Language_Indo_Abstract
 {
     /**
      * Name of this language
