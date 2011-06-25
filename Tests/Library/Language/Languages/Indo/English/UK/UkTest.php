@@ -3,7 +3,7 @@
  * 
  * @author newloki
  */
-namespace Tests\Language\Languages\Indo\German;
+namespace Tests\Language\Languages\Indo\English\UK;
 use Language\Languages\Indo\English\EnglishAbstract,
     Language\Languages\Indo\IndoAbstract,
     Language\Languages\Indo\English\UK\Uk;

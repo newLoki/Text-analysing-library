@@ -4,7 +4,7 @@
  * @author newloki
  */
 
-namespace Tests\Language\Languages\Indo\German;
+namespace Tests\Language\Languages\Indo\English;
 use Language\Languages\Indo\English\EnglishAbstract,
     Language\Languages\Indo\IndoAbstract,
     Language\Languages\Indo\English\UK\Uk;
@@ -18,6 +18,7 @@ class EnglishAbstractTest extends \PHPUnit_Framework_TestCase
     public function testIfYIsAVocalByDefault()
     {
         try {
+            /** @var $language Language\Languages\Indo\English\EnglishAbstract */
             $language = $this->getMockForAbstractClass('EnglishAbstract');
         } catch(\Exception $e) {
             //handle Exception, because there is a bug in PHPUnit until version
