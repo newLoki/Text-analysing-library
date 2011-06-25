@@ -13,7 +13,8 @@ But for analysing texts it is necessary to have power, especially for analysing
 many texts at once.
 So PHP is in reality not the best choice for performance critical tasks.
 
-*But then, why PHP?*
+_But then, why PHP?_
+
 I chose PHP for this library, because i'm not the worst in programming PHP.
 I'am faster in writing PHP and so I have more time to design a clean structure.
 But it is planned for the future to port this library to C++, but actually I'am
