@@ -7,6 +7,32 @@ This library should implement some algorithm to get different key figures.
 The main objective is to make each algorithm independend from the text and the
 language of the text and give an toolset to automatically compare texts.
 
+#Why PHP for such a task?
+PHP is an interpreted language, this means it is not the fastest.
+But for analysing texts it is necessary to have power, especially for analysing
+many texts at once.
+So PHP is in reality not the best choice for performance critical tasks.
+
+*But then, why PHP?*
+I chose PHP for this library, because i'm not the worst in programming PHP.
+I'am faster in writing PHP and so I have more time to design a clean structure.
+But it is planned for the future to port this library to C++, but actually I'am
+not a professional in this language, so I wrote this library in PHP until she is
+finished and look after if it is useful to port it to another language.
+But you are free to begin to adapt concepts and implementation from this project
+and build your own library in another language.
+
+
+##Unittests
+Each project is easier if there are unit test availeable.
+Therefore this library has tests too and this from the beginning.
+To check if all tests are still running, even if there where are some changes,
+you can run
+`cd /path/to/project/Tests/
+phpunit`
+
+The only dependence for tests is a runnable PHPUnit installation.
+
 ##todo's
 * Add tests for text class
 * Add tests for wordclass
@@ -28,14 +54,4 @@ The word _linguistic_ is based on 6 consonants (*C*) and 4 vocals (*V*),
 his format is CVCCVVCCVC, that can be summerized to CVCVCV.
 This is one of the simplest phonetic analyses.
 It is usefull to compare the sound of words.
-
-##Unittests
-Each project is easier if there are unit test availeable.
-Therefore this library has tests too and this from the beginning.
-To check if all tests are still running, even if there where are some changes,
-you can run
-`cd /path/to/project/Tests/
-phpunit`
-
-The only dependence for tests is a runnable PHPUnit installation.
 
