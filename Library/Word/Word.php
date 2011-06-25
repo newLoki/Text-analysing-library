@@ -14,6 +14,8 @@ class Word
     /** @var string $_word */
     protected $_word;
 
+    protected $_counter;
+
     /**
      * Create an word object based on text as string and his corresponding
      * language
@@ -26,4 +28,37 @@ class Word
         $this->_word = (string) $_word;
         $this->_language = $_language;
     }
+
+    /**
+     * Setter for counter
+     *
+     * @param int $counter
+     * @return void
+     */
+    public function setCounter($counter)
+    {
+        $this->_counter = $counter;
+    }
+
+    /**
+     * Getter for counter
+     *
+     * @return int
+     */
+    public function getCounter()
+    {
+        return $this->_counter;
+    }
+
+    /**
+     * Increase counter for this word by given steps (default is one)
+     *
+     * @param int $_steps
+     * @return void
+     */
+    public function incrementCounter($_steps = 1)
+    {
+        $this->_counter += (int) $_steps;
+    }
+
 }
