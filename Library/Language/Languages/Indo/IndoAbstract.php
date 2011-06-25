@@ -103,10 +103,11 @@ abstract class IndoAbstract extends LanguagesAbstract
      */
     public function replaceInCVMapping($_key, $_value)
     {
-        if(array_key_exists($_key, $this->_CVMapping)) {
-            $this->_CVMapping[$_key] = (string) $_value;
+        $key = strtolower($_key);
+        if(array_key_exists($key, $this->_CVMapping)) {
+            $this->_CVMapping[$key] = (string) $_value;
         } else {
-            throw new LanguagesException($_key . ' don\'t exists in
+            throw new LanguagesException($key . ' don\'t exists in
                                         mapping table');
         }
     }
