@@ -8,10 +8,15 @@ The main objective is to make each algorithm independend from the text and the
 language of the text and give an toolset to automatically compare texts.
 
 ##todo's
-* Create an object representing a text
-* Create an object representing each word inside a text
-* Create an object representing each object in a text they are not a word
+* Add tests for text class
+* Add tests for wordclass
+* Create a class representing each object in a text they are not a word
 (such as punctuations)
+* Add tests for interpunction class
+* Create a class representing each sentences in text
+* Add tests for sentences class
+* Implement cologne phonetics algorithm (word algorithm)
+* Add tests for cologne phonetics algorithm
 
 ##Implemented algorithm
 ###Stemmer
@@ -24,4 +29,13 @@ his format is CVCCVVCCVC, that can be summerized to CVCVCV.
 This is one of the simplest phonetic analyses.
 It is usefull to compare the sound of words.
 
+##Unittests
+Each project is easier if there are unit test availeable.
+Therefore this library has tests too and this from the beginning.
+To check if all tests are still running, even if there where are some changes,
+you can run
+`cd /path/to/project/Tests/
+phpunit`
+
+The only dependence for tests is a runnable PHPUnit installation.
 
