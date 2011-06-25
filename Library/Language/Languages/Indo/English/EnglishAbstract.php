@@ -22,7 +22,7 @@ abstract class EnglishAbstract extends IndoAbstract
      * childs
      * @return void
      */
-    public function __construct()
+    public final function __construct()
     {
         //in english Y is almost an vocal
         try {
