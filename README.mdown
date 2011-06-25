@@ -28,8 +28,8 @@ Each project is easier if there are unit test availeable.
 Therefore this library has tests too and this from the beginning.
 To check if all tests are still running, even if there where are some changes,
 you can run
-`cd /path/to/project/Tests/
-phpunit`
+`cd /path/to/project/Tests/`
+`phpunit`
 
 The only dependence for tests is a runnable PHPUnit installation.
 
