@@ -3,10 +3,12 @@
  * 
  * @author newloki
  */
-namespace \Language\Parser\Word\Staemmer\Porter;
-use \Language\Parser\ParserAbstract,
-    \Language\Parser\Word\WordParserInterface,
-    \Language\Languages\LanguagesAbstract;
+namespace Language\Parser\Word\Staemmer\Porter;
+use Language\Parser\ParserAbstract,
+    Language\Parser\Word\WordParserInterface,
+    Language\Languages\LanguagesAbstract;
+
+require_once realpath(__DIR__) . '/../../../ParserAbstract.php';
 
 class PorterParser extends ParserAbstract implements WordParserInterface
 {
@@ -17,7 +19,7 @@ class PorterParser extends ParserAbstract implements WordParserInterface
      * but if he is followed by a vocal he is an consonant
      *
      * @param  $_word
-     * @param \Language\Languages\LanguagesAbstract $_language
+     * @param Language\Languages\LanguagesAbstract $_language
      * @return string
      */
     protected function parse($_word, LanguagesAbstract $_language)

@@ -3,12 +3,12 @@
  * This class represents a word
  * @author newloki
  */
-namespace \Language\Word;
-use \Language\Languages\LanguagesAbstract;
+namespace Language\Word;
+use Language\Languages\LanguagesAbstract;
 
 class Word
 {
-    /** @var \Language\Languages\LanguagesAbstract $_language */
+    /** @var Language\Languages\LanguagesAbstract $_language */
     protected $_language;
 
     /** @var string $_word */
@@ -21,7 +21,7 @@ class Word
      * language
      *
      * @param  $_word
-     * @param \Language\Languages\LanguagesAbstract $_language
+     * @param Language\Languages\LanguagesAbstract $_language
      */
     public function __construct($_word, LanguagesAbstract $_language)
     {

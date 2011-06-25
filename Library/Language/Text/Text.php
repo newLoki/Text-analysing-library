@@ -4,16 +4,18 @@
  *
  * @author newloki
  */
-namespace \Language\Text;
-use \Language\Languages\LanguagesAbstract
-    \Language\Word;
+namespace Language\Text;
+use Language\Languages\LanguagesAbstract,
+    Language\Word;
+
+require_once realpath(__DIR__) . '/TextException.php';
 
 class Text
 {
     /** @var string $_text */
     protected $_text;
 
-    /** @var \Language\Languages\LanguagesAbstract $_language */
+    /** @var Language\Languages\LanguagesAbstract $_language */
     protected $_language;
 
     /** @var array $_words */
@@ -24,7 +26,7 @@ class Text
      * language
      *
      * @param  $_text
-     * @param \Language\Languages\LanguagesAbstract $_language
+     * @param Language\Languages\LanguagesAbstract $_language
      */
     public function __construct($_text, LanguagesAbstract $_language)
     {
@@ -90,7 +92,7 @@ class Text
      *
      * @todo implement this method
      *
-     * @param \Language\LanguagesAbstract
+     * @param Language\Languages\LanguagesAbstract
      * @return void
      */
     public function setLanguage(LanguageAbstract $_language)
@@ -102,7 +104,7 @@ class Text
     /**
      * Getter for language
      *
-     * @return \Language\Languages\LanguagesAbstract|LanguagesAbstract
+     * @return Language\Languages\LanguagesAbstract|LanguagesAbstract
      */
     public function getLanguage()
     {

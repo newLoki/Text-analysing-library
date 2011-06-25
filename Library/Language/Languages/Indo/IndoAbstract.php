@@ -3,10 +3,10 @@
  * 
  * @author newloki
  */
-namespace \Language\Languages\Indo;
-use \Language\Languages\LanguagesAbstract,
-    \Language\Languages\LanguagesException;
-
+namespace Language\Languages\Indo;
+use Language\Languages\LanguagesAbstract,
+    Language\Languages\LanguagesException;
+require_once realpath(__DIR__) . '/../LanguagesAbstract.php';
 
 abstract class IndoAbstract extends LanguagesAbstract
 {
@@ -75,17 +75,20 @@ abstract class IndoAbstract extends LanguagesAbstract
     /**
      * Add a new entry to consonant/vocal mapping if it not exists
      * else throw an exception
-     * @throws Languages_Exception thrown if entry with given key already exists
+     * @throws Language\Languages\LanguagesException thrown
+     * if entry with given key already exists
      * @param  $_key
      * @param  $_value
      * @return void
      */
     public function addToCVMapping($_key, $_value)
     {
-        if(!array_key_exists($_key, $this->_CVMapping)) {
-            $this->_CVMapping[$_key] = (string) $_value;
+        $key = strtolower($_key);
+
+        if(!array_key_exists($key, $this->_CVMapping)) {
+            $this->_CVMapping[$key] = (string) $_value;
         } else {
-            throw new LanguagesException('Key ' . $_key . ' already exists in
+            throw new LanguagesException('Key ' . $key . ' already exists in
                                         mapping table');
         }
     }

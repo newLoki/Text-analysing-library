@@ -3,7 +3,8 @@
  * 
  * @author newloki
  */
-namespace \Language\Languages;
+namespace Language\Languages;
+require_once realpath(__DIR__) . '/LanguagesException.php';
 
 abstract class LanguagesAbstract
 {

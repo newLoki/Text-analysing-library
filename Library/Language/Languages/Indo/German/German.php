@@ -3,10 +3,10 @@
  * 
  * @author newloki
  */
-namespace \Language\Languages\Indo\German;
-use \Language\Languages\Indo\IndoAbstract,
-    \Language\Languages\LanguagesException;
-
+namespace Language\Languages\Indo\German;
+use Language\Languages\Indo\IndoAbstract,
+    Language\Languages\LanguagesException;
+require_once realpath(__DIR__) . '/../IndoAbstract.php';
 class German extends IndoAbstract
 {
     /**
@@ -28,7 +28,7 @@ class German extends IndoAbstract
 
     /**
      * Add vowels to language
-     * @throws Languages_Exception if he can't add vowels
+     * @throws Language\Languages\LanguagesException if he can't add vowels
      * @return void
      */
     public function __construct()

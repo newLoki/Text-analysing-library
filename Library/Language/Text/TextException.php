@@ -4,7 +4,7 @@
  *
  * @author newloki
  */
-namespace \Language\Text;
+namespace Language\Text;
 
 class TextException extends \Exception
 {

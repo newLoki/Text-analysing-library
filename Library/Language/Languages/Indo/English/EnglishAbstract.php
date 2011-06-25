@@ -3,9 +3,11 @@
  * 
  * @author newloki
  */
-namespace \Language\Languages\Indo\English;
-use \Language\Languages\Indo\IndoAbstract,
-    \Language\Languages\LanguagesException;
+namespace Language\Languages\Indo\English;
+use Language\Languages\Indo\IndoAbstract,
+    Language\Languages\LanguagesException;
+
+require_once realpath(__DIR__) . '/../IndoAbstract.php';
 
 abstract class EnglishAbstract extends IndoAbstract
 {

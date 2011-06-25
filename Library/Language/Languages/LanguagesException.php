@@ -3,7 +3,7 @@
  * 
  * @author newloki
  */
-namespace \Language\Languages;
+namespace Language\Languages;
 class LanguagesException extends \Exception
 {
 

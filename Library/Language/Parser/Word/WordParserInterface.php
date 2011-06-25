@@ -3,8 +3,8 @@
  * 
  * @author newloki
  */
-namespace \Language\Parser\Word;
-use \Language\Languages\LanguagesAbstract;
+namespace Language\Parser\Word;
+use Language\Languages\LanguagesAbstract;
 
 interface WordParserInterface
 {
