@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ * This class represents a word
  * @author newloki
  */
 namespace \Language\Word;
