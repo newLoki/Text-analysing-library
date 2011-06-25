@@ -3,8 +3,9 @@
  * 
  * @author newloki
  */
- 
-class Parser_Abstract
+namespace \Language\Parser;
+use \Language\Languages\LanguagesAbstract;
+class ParserAbstract
 {
     /**
      * @var string $_text
@@ -16,7 +17,7 @@ class Parser_Abstract
      */
     protected $_splitText = array();
 
-    /** @var Language_Abstract $_language */
+    /** @var LanguagesAbstract $_language */
     protected $_language;
 
     /**
@@ -25,7 +26,7 @@ class Parser_Abstract
      * @param string $_text
      * @return void
      */
-    public function __construct(Language_Abstract $_language, $_text)
+    public function __construct(LanguagesAbstract $_language, $_text)
     {
         $this->_language = $_language;
         $this->_text = (string) $_text;

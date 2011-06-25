@@ -3,10 +3,13 @@
  * 
  * @author newloki
  */
- 
-class Parser_Stemmer_Porter_Parser extends Parser_Abstract implements Parser_Interface
-{
+namespace \Language\Parser\Word\Staemmer\Porter;
+use \Language\Parser\ParserAbstract,
+    \Language\Parser\ParserInterface,
+    \Language\Languages\LanguagesAbstract;
 
+class PorterParser extends ParserAbstract implements ParserInterface
+{
     /**
      * @var array
      * 'word' => 'format'

@@ -3,18 +3,21 @@
  * 
  * @author newloki
  */
- 
-class Language_Indo_German_German extends Language_Indo_Abstract
+namespace \Language\Languages\Indo\German;
+use \Language\Languages\Indo\IndoAbstract,
+    \Language\Languages\LanguagesException;
+
+class German extends IndoAbstract
 {
     /**
      * German vowel and her mapping to consonants/vocals
      * @var array $_additionalCVMapping
      */
     protected $_vowelsCVMapping = array(
-        '§' => Language_Indo_Abstract::CONSONANT,
-        'Ÿ' => Language_Indo_Abstract::VOCAL,
-        'š' => Language_Indo_Abstract::VOCAL,
-        'Š' => Language_Indo_Abstract::VOCAL
+        '§' => IndoAbstract::CONSONANT,
+        'Ÿ' => IndoAbstract::VOCAL,
+        'š' => IndoAbstract::VOCAL,
+        'Š' => IndoAbstract::VOCAL
     );
 
     /**
@@ -25,7 +28,7 @@ class Language_Indo_German_German extends Language_Indo_Abstract
 
     /**
      * Add vowels to language
-     * @throws Language_Exception if he can't add vowels
+     * @throws Languages_Exception if he can't add vowels
      * @return void
      */
     public function __construct()
@@ -35,8 +38,8 @@ class Language_Indo_German_German extends Language_Indo_Abstract
             {
                 $this->addToCVMapping($key, $value);
             }
-        } catch(Language_Exception $e) {
-            throw new Language_Exception('Can\'t create ' . $this->_name, $e);
+        } catch(LanguagesException $e) {
+            throw new LanguagesException('Can\'t create ' . $this->_name, $e);
         }
     }
 

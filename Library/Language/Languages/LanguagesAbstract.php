@@ -3,8 +3,9 @@
  * 
  * @author newloki
  */
- 
-abstract class Language_Abstract
+namespace \Language\Languages;
+
+abstract class LanguagesAbstract
 {
     /**
      * Name of this language

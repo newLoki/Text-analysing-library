@@ -3,8 +3,9 @@
  * 
  * @author newloki
  */
- 
-Interface Parser_Interface
+namespace \Language\Parser;
+
+Interface ParserInterface
 {
     /**
      * Method to parse given text

@@ -3,8 +3,11 @@
  * 
  * @author newloki
  */
- 
-abstract class Language_Indo_English_Abstract extends Language_Indo_Abstract
+namespace \Language\Languages\Indo\English;
+use \Language\Languages\Indo\IndoAbstract,
+    \Language\Languages\LanguagesException;
+
+abstract class EnglishAbstract extends IndoAbstract
 {
     /**
      * Name of this language
@@ -21,9 +24,9 @@ abstract class Language_Indo_English_Abstract extends Language_Indo_Abstract
     {
         //in english Y is almost an vocal
         try {
-            $this->replaceInCVMapping('y', Language_Indo_Abstract::VOCAL);
-        } catch(Language_Exception $e) {
-            throw new Language_Exception('Can\'t create ' . $this->_name, $e);
+            $this->replaceInCVMapping('y', IndoAbstract::VOCAL);
+        } catch(LanguagesException $e) {
+            throw new LanguagesException('Can\'t create ' . $this->_name, $e);
         }
     }
 }
