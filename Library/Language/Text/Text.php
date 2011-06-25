@@ -85,6 +85,21 @@ class Text
     }
 
     /**
+     * Set language if he is different from existing and rebuild words
+     * corresponding to this text
+     *
+     * @todo implement this method
+     *
+     * @param \Language\LanguagesAbstract
+     * @return void
+     */
+    public function setLanguage(LanguageAbstract $_language)
+    {
+        //check if language is different from setted language
+        //if it is, set new language and call clean words splitText
+    }
+
+    /**
      * Getter for language
      *
      * @return \Language\Languages\LanguagesAbstract|LanguagesAbstract
