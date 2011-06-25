@@ -26,12 +26,4 @@ class UkTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals($this->_name, $this->_language->getName());
     }
-
-    public function testIfYIsAVocalByDefault()
-    {
-        $mappingVC = $this->_language->getCVMapping();
-        $this->assertEquals($mappingVC['y'], IndoAbstract::VOCAL);
-        $this->assertNotEquals($mappingVC['y'], IndoAbstract::CONSONANT);
-    }
-
 }
