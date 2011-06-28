@@ -44,6 +44,8 @@ The only dependence for tests is a runnable PHPUnit installation.
 * Add tests for sentences class
 * Implement cologne phonetics algorithm (word algorithm)
 * Add tests for cologne phonetics algorithm
+* Add mood parser, based on SentiWS
+* Add tests for mood parser
 
 ##Implemented algorithm
 ###Stemmer
