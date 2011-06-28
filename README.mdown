@@ -56,3 +56,16 @@ his format is CVCCVVCCVC, that can be summerized to CVCVCV.
 This is one of the simplest phonetic analyses.
 It is usefull to compare the sound of words.
 
+
+#Special thanks
+There are some peoples and institutions they have done great work before.
+Many of this work is only adapted and processed by me to bring it to work with
+this library.
+But nevertheless i would like to thank all these people they have published her
+work under a free licence to give other peoples the ability to work with there 
+results.
+The following is a partial list of some projects they are used by this library
+and their licenses:
+* [SentiWS (v 1.8b)](http://wortschatz.informatik.uni-leipzig.de/download/sentiws.html) under
+  [Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
