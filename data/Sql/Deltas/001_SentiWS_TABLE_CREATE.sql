@@ -4,7 +4,8 @@ CREATE TABLE IF NOT EXISTS `sentiws` (
     `base` VARCHAR(200) NOT NULL,
     `type` ENUM('adjective', 'adverb', 'noun', 'verb'),
     `weight` FLOAT SIGNED DEFAUL 0.000
-)
+    PRIMARY KEY (`id`) ,
+    UNIQUE INDEX `UNQ_word` (`word` ASC) )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COMMENT = 'table holds structure for sentiWS, a collection of moods for each word';
