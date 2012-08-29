@@ -1,0 +1,20 @@
+{
+    name: "newloki/text-analysing-library",
+    description: "Little library for analysing text",
+    keywords: [
+        "linguistic",
+        "php"
+    ],
+    homepage: "https://github.com/newLoki/Text-analysing-library",
+    type: "library",
+    license: "free BSD license",
+    authors: [{
+        name: "newLoki",
+        email: "alberto.assmann@mayflower.de",
+        homepage: "newloki.de"
+    }],
+    require: {
+        php: ">=5.3.2",
+        "symfony/console": "dev-master"
+    }
+}
